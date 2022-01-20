@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body,
+        html{
+            padding: 0;
+            margin: 0;
+            font-family: tahoma;
+        }
+        header{
+            height: 80px;
+            background-color: #ddd;
+            text-align: center;
+        }
+        h2{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .main{
+            height: 80vh;
+        }
+        footer{
+            text-align: center;
+            background-color: #ddd;
+            padding: 20px;
+        }
+        h2::after{
+            content: '';
+            display: block;
+            width: 400px;
+            height: 3px;
+            background-color: #000;
+            margin: auto;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body onload="sixth()">
+    <!-- Header Section -->
+    <header>
+        <h2>Nayem Hossain</h2>
+        <h3>JavaScript Basic Code</h3>
+    </header>
+
+    <section class="main">
+        <h2 id="first">Onclick events</h2>
+        <button type="button" onclick="first()">
+            click here
+        </button>
+        <br><br><br>
+        <h2 id="second">
+            Onchange events 
+        </h2>
+        <p>What is your favourite:</p>
+        <select name="" id="mySelection" onchange="mySelection()">
+            <option value="Apple">Apple</option>
+            <option value="Mange">Mango</option>
+            <option value="Banana">Banana</option>
+            <option value="Orange">Orange</option>
+        </select>
+        <br><br><br>
+
+
+        <h2 id="third">onmouseover events</h2>
+        <button type="button" onmouseover="third()">
+            Hover this
+        </button>
+        <br><br><br>
+        
+
+        <h2 id="fourth">onmouseover events</h2>
+        <button type="button" onmouseout="fourth()">
+            Mouseout this
+        </button>
+        <br><br><br>
+
+        <h2 id="fifth">onkeydown events</h2>
+        <input type="text" onkeydown="fifth()">
+        <br><br><br>
+
+
+
+    </section>
+
+
+
+
+
+
+    <footer>
+        <p>copyright 2022. All right reserved Nayem Ishan</p>
+    </footer>
+    
+
+
+
+    <!-- JavaScript  -->
+    <script src="main.js"></script>
+
+</body>
+</html>
