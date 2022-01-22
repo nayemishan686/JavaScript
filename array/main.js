@@ -1,36 +1,29 @@
-//function
-function summation(x,y){
-    return x*y;
-}
-let sum = summation(10,2);
-console.log(sum);
+//declare array
+const cars = [
+    'Audi',
+    'BMW',
+    'Volvo',
+    'Toyota'
+]
+//make output
+document.getElementById('first').innerHTML = cars;
 
-//onclick events
-function first(){
-    document.getElementById('first').innerHTML = 'You just click this button';
-}
+//You can also create an array, and then provide the elements:
+const car = [];
+car[0] = 'Audi';
+car[1] = 'BMW';
+car[2] = 'Toyota';
+document.getElementById('second').innerHTML = car;
 
-//onchange events
-function mySelection(){
-    var changing = document.getElementById('mySelection').value;
-    document.getElementById('second').innerHTML = "You selected : " + changing;
-}
+//accessing array elements
+document.getElementById('third').innerHTML = car[0];
 
-//onmouseover events
-function third(){
-    document.getElementById('third').innerHTML  = "you just hover the mouse"
-}
+// Changing array elements
+car[0] = 'Volvo';
+document.getElementById('fourth').innerHTML = car;
 
-//onsmouseout events
-function fourth(){
-    document.getElementById('fourth').innerHTML = "You just mouseout"
-}
-//onkeydown events
-function fifth(){
-    alert('you press a key');
-}
+//array length check
+document.getElementById('fifth').innerHTML = car.length;
 
-//onload events
-function sixth(){
-    alert('Page is loading');
-}
+//accessing last array elements
+document.getElementById('sixth').innerHTML = car[car.length-1]
