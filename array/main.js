@@ -1,66 +1,57 @@
-//declare array
-const cars = [
-    'Audi',
-    'BMW',
-    'Volvo',
-    'Toyota'
-]
-//make output
-document.getElementById('first').innerHTML = cars;
+//Large numbers between two numbers
+var a = 10;
+var b = 8;
+var c = 15;
+if(a>b){
+    document.getElementById('first').innerHTML = a + ' is greater than ' + b;
+}else{
+    document.getElementById('first').innerHTML = b + ' is greater than ' + a;
+}
 
-//You can also create an array, and then provide the elements:
-const car = [];
-car[0] = 'Audi';
-car[1] = 'BMW';
-car[2] = 'Toyota';
-document.getElementById('second').innerHTML = car;
+//Large numbers between two numbers>b
+if(a>b && a>c){
+    document.getElementById('second').innerHTML = a + ' is greater than ' + b + ' & ' +c;
+}else if(b>a && b>c){
+    document.getElementById('second').innerHTML = b + ' is greater than ' + a + ' & ' +c;
+}else{
+    document.getElementById('second').innerHTML = c + ' is greater than ' + a + ' & ' + b;
+}
 
-//accessing array elements
-document.getElementById('third').innerHTML = car[0];
+//leap year checker
+var year = 2022;
+if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)){
+    document.getElementById('third').innerHTML = year + ' is a leap year.'
+}else{
+    document.getElementById('third').innerHTML = year + ' is not a leap year.'
+}
 
-// Changing array elements
-car[0] = 'Volvo';
-document.getElementById('fourth').innerHTML = car;
 
-//array length check
-document.getElementById('fifth').innerHTML = car.length;
+//1-50 even number using for loop
+var even = ' ';
+for(var i = 0; i <= 50; i++){
+    if(i % 2 == 0){
+        even += i + ', '; 
+        document.getElementById('fourth').innerHTML = even;
+    }
+}
 
-//accessing last array elements
-document.getElementById('sixth').innerHTML = car[car.length-1]
+//1-50 odd number using for loop
+var even = ' ';
+for(var i = 0; i <= 50; i++){
+    if(i % 2 != 0){
+        even += i + ', '; 
+        document.getElementById('fifth').innerHTML = even;
+    }
+}
 
-//array to string
-const fruits = [
-    'Banana',
-    'Orange',
-    'Apple',
-    'Lemon',
-    'Mango'
-];
-document.getElementById('seventh').innerHTML = fruits.toString();
+// //if two loop is even it will run
+// for(var i = 0; i <= 10; i++){
+//     if(i % 2 == 0){
+//         for(var j = 0; j<i; j++){
+//             if(i%2 == 0){
+//                 document.getElementById('sixth').innerHTML = i + ' '; 
+//             }
+//         }
+//     }
+// }
 
-//array pop
-let fruit = fruits.pop();
-document.getElementById('eight').innerHTML = fruits;
-
-//array push
-fruits.push('Mango');
-document.getElementById('eight1').innerHTML = fruits;
-
-//array shift
-let fruit1 = fruits.shift();
-document.getElementById('eight2').innerHTML = fruits;
-
-//array push
-fruits.unshift('Orange');
-document.getElementById('eight3').innerHTML = fruits;
-
-//array delete()
-delete fruits[0];
-document.getElementById('eight4').innerHTML = fruits;
-
-//array Merge
-const arr1 = ["Cecilie", "Lone"];
-const arr2 = ["Emil", "Tobias", "Linus"];
-const arr3 = ["Robin", "Morgan"];
-const myChildren = arr1.concat(arr2,arr3);
-document.getElementById('eight5').innerHTML = myChildren;
