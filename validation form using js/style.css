@@ -1,0 +1,16 @@
+.input-box input:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.input-box.error input{
+    border: 1px solid #ff0000;
+}
+.input-box.success input{
+    border: 1px solid #39ca2b;
+}
+.input-box.error small{
+    color: #ff0000;
+}
+.input-box.success small{
+    display: none;
+}
